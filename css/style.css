@@ -30,7 +30,7 @@ h1{
 a{
     text-decoration: none;
 }
-.Menu__item--prix{
+.Menu__item__prix{
     display: flex;
 align-items: flex-end;
 padding-left: 30px;
