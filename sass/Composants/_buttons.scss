@@ -1,6 +1,5 @@
 button{
     border-radius: 40px;
-    box-shadow:aqua;
     background: linear-gradient(to top left, $colour-primary,$colour-secondary);
     width:220px;
     height : 60px;
@@ -8,4 +7,6 @@ button{
     font-size: 18px;
     border: 0;
     font-family: 'Roboto';
+    display: inline-block;
+    margin: auto;
 }
