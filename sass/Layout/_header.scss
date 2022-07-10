@@ -1,0 +1,15 @@
+header .logo {
+width: 40%;
+margin: auto;}
+.Resto{
+    width:100%
+}
+header{
+    display: flex;
+    margin: 20px;
+    & i{
+        padding-top:4px;
+        font-size: 20px;
+    }
+}
+
