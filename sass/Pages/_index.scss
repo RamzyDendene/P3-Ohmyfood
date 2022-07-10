@@ -1,0 +1,60 @@
+nav {
+    text-align: center;
+    p, h2 {
+        font-weight: 100;
+        font-size: 20px;
+    }
+}
+
+
+.Fonctionnement {
+margin-left: 20px;
+
+& p {
+padding: 20px;
+background-color: $colour-menu;
+border-radius: 20px;
+
+& i{
+    padding-right: 20px;
+}
+}
+& span{
+    background: $colour-primary;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    font-size: 10px;
+}
+}
+.restaurant-card{
+    border: solid;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+& img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0px;
+}
+& .ahover{
+    display: none;
+}
+& span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: red;
+    width: 70px;
+    height: 25px;
+    background-color: grey;
+    text-align: center;
+}
+}

@@ -8,6 +8,11 @@ h1 {
   font-style: italic;
 }
 
+nav h1 {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
 p, h2, h3 {
   font-family: "Roboto";
 }
@@ -44,22 +49,53 @@ button {
   margin-bottom: 30px;
 }
 
-header .logo {
-  width: 40%;
-  margin: auto;
-}
-
 .Resto {
   width: 100%;
 }
 
-header {
+.header__menu {
   display: flex;
   margin: 20px;
 }
-header i {
+.header__menu i {
   padding-top: 4px;
   font-size: 20px;
+}
+.header__menu .logo {
+  width: 40%;
+  margin: auto;
+}
+
+.header__index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__index img {
+  width: 40%;
+}
+.header__index .Recherche {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+.header__index .Recherche input[type=text] {
+  border: none;
+  background-color: #f6f6f6;
+}
+.header__index .Recherche input::-moz-placeholder {
+  font-family: "Roboto";
+  color: black;
+}
+.header__index .Recherche input:-ms-input-placeholder {
+  font-family: "Roboto";
+  color: black;
+}
+.header__index .Recherche input::placeholder {
+  font-family: "Roboto";
+  color: black;
 }
 
 footer {
@@ -120,4 +156,64 @@ footer span {
 .Menu span {
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 5px;
+}
+
+nav {
+  text-align: center;
+}
+nav p, nav h2 {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.Fonctionnement {
+  margin-left: 20px;
+}
+.Fonctionnement p {
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+.Fonctionnement p i {
+  padding-right: 20px;
+}
+.Fonctionnement span {
+  background: #9356DC;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  justify-content: center;
+  position: absolute;
+  left: 10px;
+  font-size: 10px;
+}
+
+.restaurant-card {
+  border: solid;
+  border-radius: 20px;
+  margin: 10px;
+  position: relative;
+}
+.restaurant-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0px;
+}
+.restaurant-card .ahover {
+  display: none;
+}
+.restaurant-card span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: red;
+  width: 70px;
+  height: 25px;
+  background-color: grey;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
