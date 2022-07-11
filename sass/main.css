@@ -131,43 +131,6 @@ footer span {
   padding-left: 10px;
 }
 
-.Menu {
-  background-color: #f6f6f6;
-  border-radius: 40px 40px 0px 0px;
-  padding: 20px;
-  position: relative;
-  bottom: 60px;
-}
-.Menu .Menu__categorie__plat {
-  border: 1px;
-  border-radius: 15px;
-  display: flex;
-  padding: 10px;
-  background-color: white;
-  margin-top: 20px;
-}
-.Menu .Menu__item {
-  display: flex;
-  justify-content: space-between;
-}
-.Menu h3, .Menu p {
-  margin: 0;
-}
-.Menu i {
-  display: none;
-}
-.Menu .Menu__item__prix {
-  display: flex;
-  justify-content: flex-end;
-}
-.Menu a {
-  width: 100%;
-}
-.Menu span {
-  border-bottom: solid 3px #99E2D0;
-  padding-bottom: 5px;
-}
-
 .restaurant-card img {
   width: 100%;
 }
@@ -252,4 +215,38 @@ nav p, nav h2 {
 .restaurant-card__titre i {
   font-size: 27px;
   margin-right: 20px;
+}
+
+.Menu {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px;
+  position: relative;
+  bottom: 60px;
+}
+.Menu a {
+  width: 100%;
+}
+.Menu h3, .Menu p {
+  margin: 0;
+}
+.Menu .__categorie__plat {
+  border: 1px;
+  border-radius: 15px;
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  margin-top: 20px;
+}
+.Menu .__item {
+  display: flex;
+  justify-content: space-between;
+}
+.Menu .__item .__prix {
+  display: flex;
+  justify-content: flex-end;
+}
+.Menu span {
+  border-bottom: solid 3px #99E2D0;
+  padding-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */
