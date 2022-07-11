@@ -227,10 +227,7 @@ nav p, nav h2 {
 .Menu a {
   width: 100%;
 }
-.Menu h3, .Menu p {
-  margin: 0;
-}
-.Menu .__categorie__plat {
+.Menu .Menu__categorie__plat {
   border: 1px;
   border-radius: 15px;
   display: flex;
@@ -238,11 +235,14 @@ nav p, nav h2 {
   background-color: white;
   margin-top: 20px;
 }
-.Menu .__item {
+.Menu .Menu__item {
   display: flex;
   justify-content: space-between;
 }
-.Menu .__item .__prix {
+.Menu h3, .Menu p {
+  margin: 0;
+}
+.Menu .Menu__item__prix {
   display: flex;
   justify-content: flex-end;
 }

@@ -10,12 +10,8 @@
         width: 100%;
         
     }
-    
-    & h3, p{      
-        margin: 0;
-    }
 
-    & .__categorie__plat{
+    & .Menu__categorie__plat{
         border: 1px;
         border-radius: 15px;
         display: flex;
@@ -25,20 +21,22 @@
        
     }
     
-        & .__item{
-            display: flex;
-            justify-content: space-between;
+    & .Menu__item{
+        display: flex;
+        justify-content: space-between;
 
+    }
+    & h3, p{      
+          margin: 0;
+    }
     
     
-    
-    
-                & .__prix{
-                    display: flex;
-                    justify-content: flex-end;
+    & .Menu__item__prix{
+        display: flex;
+        justify-content: flex-end;
 
-                }
-        }
+    }
+   
     
 
     & span{
