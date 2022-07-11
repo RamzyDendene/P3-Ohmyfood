@@ -135,6 +135,8 @@ footer span {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
   padding: 20px;
+  position: relative;
+  bottom: 60px;
 }
 .Menu .Menu__categorie__plat {
   border: 1px;
