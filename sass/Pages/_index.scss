@@ -1,5 +1,6 @@
 nav {
     text-align: center;
+    background-color: $colour-menu;
     p, h2 {
         font-weight: 100;
         font-size: 20px;
@@ -10,10 +11,13 @@ nav {
 .Fonctionnement {
 margin-left: 20px;
 
-& p {
+
+& p{
 padding: 20px;
 background-color: $colour-menu;
 border-radius: 20px;
+margin-top: 16px;
+margin-bottom: 20px;
 
 & i{
     padding-right: 20px;
@@ -34,11 +38,11 @@ border-radius: 20px;
 }
 }
 .Restaurants{
-    background-color: lightgray;
+    background-color: $colour-menu;
 }
 .restaurant-card{
     border-radius: 20px;
-    margin: 10px;
+    margin: 20px 10px;
     position: relative;
     background-color: white;
 & img {

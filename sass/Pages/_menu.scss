@@ -1,3 +1,7 @@
+.Menu__titre{
+    display: flex;
+    justify-content: space-between;
+}
 .Menu{
     
     background-color: #f6f6f6;
@@ -34,9 +38,11 @@
     & .Menu__item__prix{
         display: flex;
         justify-content: flex-end;
-
+        & i {
+            display: none;
+        }
+        
     }
-   
     
 
     & span{

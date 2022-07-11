@@ -25,12 +25,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: $colour-menu;
+    background-color: lightgray;
     padding: 20px;
 
     & input[type=text]{
         border: none;
-        background-color: $colour-menu;
+        background-color: lightgray;
 
     }
     & input::placeholder{
