@@ -51,9 +51,7 @@ margin-bottom: 20px;
     object-fit: cover;
     border-radius: 20px 20px 0 0px;
 }
-& .ahover{
-    display: none;
-}
+
 & span {
     position: absolute;
     right: 10px;
@@ -82,3 +80,26 @@ font-size: 27px;
 margin-right: 20px;    
 }
 }
+.heart{
+    position: relative;
+    color: black;  
+    z-index: 1;
+    & :hover{ 
+        opacity: 1;
+        transition: .3s;
+    }
+
+
+
+&--hover {
+    position: absolute;
+    top: 0px;
+    color: $colour-primary;
+    opacity: 0;
+
+    
+} 
+}
+
+  
+

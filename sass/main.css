@@ -188,9 +188,6 @@ nav p, nav h2 {
      object-fit: cover;
   border-radius: 20px 20px 0 0px;
 }
-.restaurant-card .ahover {
-  display: none;
-}
 .restaurant-card span {
   position: absolute;
   right: 10px;
@@ -218,6 +215,22 @@ nav p, nav h2 {
 .restaurant-card__titre i {
   font-size: 27px;
   margin-right: 20px;
+}
+
+.heart {
+  position: relative;
+  color: black;
+  z-index: 1;
+}
+.heart :hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.heart--hover {
+  position: absolute;
+  top: 0px;
+  color: #9356DC;
+  opacity: 0;
 }
 
 .Menu__titre {
@@ -253,9 +266,6 @@ nav p, nav h2 {
 .Menu .Menu__item__prix {
   display: flex;
   justify-content: flex-end;
-}
-.Menu .Menu__item__prix i {
-  display: none;
 }
 .Menu span {
   border-bottom: solid 3px #99E2D0;

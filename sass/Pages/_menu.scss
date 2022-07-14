@@ -22,12 +22,15 @@
         padding: 10px;
         background-color: white;
         margin-top: 20px;
+     
+    
        
     }
     
     & .Menu__item{
         display: flex;
         justify-content: space-between;
+        
 
     }
     & h3, p{      
@@ -38,11 +41,13 @@
     & .Menu__item__prix{
         display: flex;
         justify-content: flex-end;
-        & i {
-            display: none;
-        }
         
-    }
+      
+ }
+
+        
+        
+   
     
 
     & span{
@@ -50,5 +55,5 @@
        border-bottom: solid 3px #99E2D0 ;
        padding-bottom: 5px;
     }
-}
 
+}
