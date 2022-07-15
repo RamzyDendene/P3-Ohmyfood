@@ -39,6 +39,11 @@ margin-bottom: 20px;
 }
 .Restaurants{
     background-color: $colour-menu;
+    padding-top: 30px;
+    padding-left: 10px;
+    & h2{
+        font-weight: 500;
+    }
 }
 .restaurant-card{
     border-radius: 20px;
