@@ -1,6 +1,13 @@
+
 .Menu__titre{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    & i{
+        font-size: 33px;
+        margin-right: 20px;
+    }
 }
 .Menu{
     
@@ -15,7 +22,29 @@
         
     }
   
-    
+    & .Menu__categorie__plat{
+        animation: affich 2000ms;
+
+
+    }
+    @keyframes affich {
+        0% {
+            transform-origin: bottom;
+            transform: scaleY(0);
+            opacity: .1;
+        }
+       
+        46% {
+            transform: scaleY(.81);
+        }
+        85%,100% {
+            opacity: 1;
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+   
 
     & .Menu__categorie__plat{
         border: 1px;
@@ -38,7 +67,7 @@
     & h3, p{      
           margin: 0;
     }
-    
+   
     
     & .Menu__item__prix{
         display: flex;
@@ -58,4 +87,8 @@
        padding-bottom: 5px;
     }
 
+}
+.Menu__categorie{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
