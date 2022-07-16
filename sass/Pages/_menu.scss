@@ -20,14 +20,24 @@
     
     & a{
         width: 100%;
+        display: flex;
+        justify-content: space-between;
         
     }
   
-    & .Menu__categorie__plat{
-        animation: affich 2000ms;
+    & .Menu__item__prix{
+        & i{
+            transition: 1000ms;
 
+            transform: scale(1);
+            
+        }
+        & :hover{
+            transform: scale(1,2);
+        }
 
     }
+    /*
     @keyframes affich {
         0% {
             transform-origin: bottom;
@@ -45,7 +55,7 @@
             transform: scaleY(1);
         }
     }
-   
+   */
 
     & .Menu__categorie__plat{
         border: 1px;
@@ -61,8 +71,7 @@
     
     & .Menu__item{
         display: flex;
-        justify-content: space-between;
-        
+        flex-direction: column;        
 
     }
     & h3, p{      

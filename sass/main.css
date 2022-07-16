@@ -332,45 +332,37 @@ footer i {
   padding: 20px;
   position: relative;
   bottom: 60px;
+  /*
+   @keyframes affich {
+       0% {
+           transform-origin: bottom;
+           transform: scaleY(0);
+           opacity: .1;
+       }
+
+       46% {
+           transform: scaleY(.81);
+       }
+       85%,100% {
+           opacity: 1;
+       }
+       100% {
+           transform: scaleY(1);
+       }
+   }
+  */
 }
 .Menu a {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.Menu .Menu__categorie__plat {
-  -webkit-animation: affich 2000ms;
-          animation: affich 2000ms;
+.Menu .Menu__item__prix i {
+  transition: 1000ms;
+  transform: scale(1);
 }
-@-webkit-keyframes affich {
-  0% {
-    transform-origin: bottom;
-    transform: scaleY(0);
-    opacity: 0.1;
-  }
-  46% {
-    transform: scaleY(0.81);
-  }
-  85%, 100% {
-    opacity: 1;
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-@keyframes affich {
-  0% {
-    transform-origin: bottom;
-    transform: scaleY(0);
-    opacity: 0.1;
-  }
-  46% {
-    transform: scaleY(0.81);
-  }
-  85%, 100% {
-    opacity: 1;
-  }
-  100% {
-    transform: scaleY(1);
-  }
+.Menu .Menu__item__prix :hover {
+  transform: scale(1, 2);
 }
 .Menu .Menu__categorie__plat {
   border: 1px;
@@ -382,7 +374,7 @@ footer i {
 }
 .Menu .Menu__item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .Menu h3, .Menu p {
   margin: 0;
