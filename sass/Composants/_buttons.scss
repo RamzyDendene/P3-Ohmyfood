@@ -1,14 +1,21 @@
-button{
+.bouton a{
+   
     border-radius: 40px;
-    background: linear-gradient(to top left, $colour-primary,$colour-secondary);
+    background: red;
     width:240px;
     height : 50px;
     color: white;
     font-size: 18px;
     border: 0;
     font-family: 'Roboto';
-    display: block;
+    display: flex;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bouton :hover{
+    background-color: blue;
 }

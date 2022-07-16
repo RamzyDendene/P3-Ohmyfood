@@ -2,12 +2,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: lightgray;
+    background-color: $colour-menu;
     padding: 20px 0 20px 0;
 
     & input[type=text]{
         border: none;
-        background-color: lightgray;
+        background-color: darken($colour-menu, 5%) ;
         
 
     }
@@ -148,5 +148,47 @@ margin-right: 20px;
 } 
 }
 
+  @media (min-width:700px){
+   
+.main{
+    margin: 0;
+}
+.Recherche{
+    background-color: darken($colour-menu, 5%) ;
+    ;
+}
+.restaurants__list{
+    display: flex;
+    & .restaurant-card{
+        width: 25%;
+    }
+}
+.Fonctionnement {
+    background-color: darken($colour-menu, 5%) ;
+margin: 0;
+padding: 20px;
+    & p{
+        position:relative;
+        background-color: white;
+
+        & span{
+        left:-10px;
+        }
+    }
+    
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+    & a{
+        width: 25%;
+    }
+}
+
+
+
+}
+    
   
 
