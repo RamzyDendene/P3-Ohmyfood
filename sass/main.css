@@ -12,7 +12,7 @@ h1 {
   font-style: italic;
 }
 
-nav h1 {
+.description h1 {
   font-family: "Roboto";
   font-style: normal;
 }
@@ -30,7 +30,7 @@ p {
 }
 
 h2 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
 }
 
@@ -82,32 +82,6 @@ button {
 .header__index img {
   width: 40%;
 }
-.header__index .Recherche {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: lightgray;
-  padding: 20px 0 20px 0;
-}
-.header__index .Recherche input[type=text] {
-  border: none;
-  background-color: lightgray;
-}
-.header__index .Recherche input::-moz-placeholder {
-  font-family: "Roboto";
-  color: black;
-  padding-left: 15px;
-}
-.header__index .Recherche input:-ms-input-placeholder {
-  font-family: "Roboto";
-  color: black;
-  padding-left: 15px;
-}
-.header__index .Recherche input::placeholder {
-  font-family: "Roboto";
-  color: black;
-  padding-left: 15px;
-}
 
 footer {
   background-color: #353535;
@@ -144,11 +118,40 @@ footer i {
   width: 100%;
 }
 
-nav {
+.Recherche {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 20px 0 20px 0;
+}
+.Recherche input[type=text] {
+  border: none;
+  background-color: lightgray;
+}
+.Recherche input::-moz-placeholder {
+  font-family: "Roboto";
+  color: black;
+  padding-left: 15px;
+}
+.Recherche input:-ms-input-placeholder {
+  font-family: "Roboto";
+  color: black;
+  padding-left: 15px;
+}
+.Recherche input::placeholder {
+  font-family: "Roboto";
+  color: black;
+  padding-left: 15px;
+}
+
+.description {
   text-align: center;
   background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-nav p, nav h2 {
+.description p, .description h2 {
   font-weight: 100;
   font-size: 20px;
 }
@@ -165,6 +168,17 @@ nav p, nav h2 {
 }
 .Fonctionnement p i {
   padding-right: 20px;
+}
+.Fonctionnement a :hover {
+  opacity: 0;
+  background-color: #f2eafb;
+}
+.Fonctionnement a :hover i {
+  color: #9356DC;
+}
+.Fonctionnement a :hover:hover {
+  opacity: 1;
+  transition: 0.2s;
 }
 .Fonctionnement span {
   background: #9356DC;
@@ -184,9 +198,11 @@ nav p, nav h2 {
   background-color: #f6f6f6;
   padding-top: 30px;
   padding-left: 10px;
+  padding-bottom: 30px;
 }
 .Restaurants h2 {
   font-weight: 500;
+  margin-left: 12px;
 }
 
 .restaurant-card {
@@ -331,4 +347,7 @@ nav p, nav h2 {
 .Menu__categorie {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.Menu__categorie h2 {
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

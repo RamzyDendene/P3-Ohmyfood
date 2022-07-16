@@ -21,27 +21,9 @@
         width: 40%;
         
     }
-& .Recherche{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: lightgray;
-    padding: 20px 0 20px 0;
-
-    & input[type=text]{
-        border: none;
-        background-color: lightgray;
-        
-
-    }
-    & input::placeholder{
-        font-family: 'Roboto';
-        color: black;
-        padding-left: 15px;
-    }
-    
 }
 
-}
+
+
 
 

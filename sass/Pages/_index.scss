@@ -1,6 +1,29 @@
-nav {
+.Recherche{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 20px 0 20px 0;
+
+    & input[type=text]{
+        border: none;
+        background-color: lightgray;
+        
+
+    }
+    & input::placeholder{
+        font-family: 'Roboto';
+        color: black;
+        padding-left: 15px;
+    }
+    
+}
+
+.description {
     text-align: center;
     background-color: $colour-menu;
+    padding-top: 20px;
+    padding-bottom: 20px;
     p, h2 {
         font-weight: 100;
         font-size: 20px;
@@ -19,10 +42,27 @@ border-radius: 20px;
 margin-top: 16px;
 margin-bottom: 20px;
 
-& i{
-    padding-right: 20px;
+    & i{
+        padding-right: 20px;
+    }
+   
+
 }
+a :hover{
+    opacity: 0;
+    background-color:lighten($colour-primary,35%);
+    & i{
+        color: $colour-primary;
+    }
+    &:hover{
+        opacity: 1;
+        transition: .2s;
+    }
 }
+
+
+
+
 & span{
     background: $colour-primary;
     color: white;
@@ -41,8 +81,10 @@ margin-bottom: 20px;
     background-color: $colour-menu;
     padding-top: 30px;
     padding-left: 10px;
+    padding-bottom: 30px;
     & h2{
         font-weight: 500;
+        margin-left: 12px;
     }
 }
 .restaurant-card{
