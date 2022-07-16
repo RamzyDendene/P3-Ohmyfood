@@ -1,29 +1,43 @@
 .Resto{
     width:100%
 }
-.header__menu{
+
+header{
     display: flex;
-    margin: 20px;
+    justify-content: center; 
+    margin-top: 15px;
+    margin-bottom: 15px;   
     & i{
         padding-top:4px;
         font-size: 20px;
     }
-    & .logo{
-        width: 40%;
+  
+    & img{
+    width: 40%;
+    }
+    .logo{
+        display: flex;
         margin: auto;
     }
 }
-.header__index{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+@media (min-width:700px){
+
+    header {
+    
     & img{
-        width: 40%;
-        
+        width: auto;
+    }
+    a{
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    & i{
+        font-size:30px;
+
     }
 }
-
-
-
+}
 
 
