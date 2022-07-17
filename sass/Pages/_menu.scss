@@ -142,8 +142,20 @@
             }
                 & i{
                     color: white;
-                    transition: 1s;
-                    transform: rotate(-360deg);
+                    animation-name: decalage2;
+        animation-duration: 1s;
+        transform: rotate(-360deg);
+        @keyframes decalage2 {
+            0%{
+                transform: rotate(360deg);
+            }
+           
+            100%{
+                transform: rotate(0);
+
+            }
+            
+        }
 
             
         }

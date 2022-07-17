@@ -435,8 +435,27 @@ footer i {
 }
 .Menu__categorie :hover i {
   color: white;
-  transition: 1s;
+  -webkit-animation-name: decalage2;
+          animation-name: decalage2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   transform: rotate(-360deg);
+}
+@-webkit-keyframes decalage2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes decalage2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /* MEDIA QUERIES DESKTOP*/
