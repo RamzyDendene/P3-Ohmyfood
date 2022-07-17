@@ -70,7 +70,9 @@
     
     & .Menu__item__prix{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        margin-right: 20px;
         
       
  }
@@ -92,16 +94,13 @@
 
 }
 .ilog{
-    width: 55px;
-    height: 55px;
-    border: solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 20px 20px  0;
-    position: absolute;
-    left: 48px;
-   
+    width: 60px;
+    height: 60px;
+    border: none;
+    display: none;
+    border-radius: 0 15px 15px  0;
+    background-color: $colour-tertiary
+
 
 
 }
@@ -113,23 +112,40 @@
     }
     & :hover{
        & .block__prixi{
-    transition: 1s;
-    transform: translateX(-300%);
+        animation-name: decalage;
+        animation-duration: 1s;
+        transform-origin: right;
+        transform: translateX(0%);
+        @keyframes decalage {
+            0%{
+                transform: translateX(50%);
+            }
+           
+            100%{
+                transform: translateX(0%);
+
+            }
+            
+        }
+    
        }
 
         & .Menu__item__prix{
-            color: $colour-tertiary;
-            transition: 1s;
         
         }
             & .ilog{
-                & i{
-                    
-                color: $colour-tertiary;
-                transition: 1s;
-                transform: rotate(-360deg);
-
+              
+                background-color: $colour-tertiary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
+                & i{
+                    color: white;
+                    transition: 1s;
+                    transform: rotate(-360deg);
+
+            
         }
         
     }

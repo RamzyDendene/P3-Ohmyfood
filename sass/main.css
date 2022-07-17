@@ -374,7 +374,9 @@ footer i {
 }
 .Menu .Menu__item__prix {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 .Menu .block__prixi {
   display: flex;
@@ -386,15 +388,12 @@ footer i {
 }
 
 .ilog {
-  width: 55px;
-  height: 55px;
-  border: solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 20px 20px 0;
-  position: absolute;
-  left: 48px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  display: none;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
 }
 
 .Menu__categorie {
@@ -405,15 +404,37 @@ footer i {
   font-weight: 300;
 }
 .Menu__categorie :hover .block__prixi {
-  transition: 1s;
-  transform: translateX(-300%);
+  -webkit-animation-name: decalage;
+          animation-name: decalage;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  transform-origin: right;
+  transform: translateX(0%);
 }
-.Menu__categorie :hover .Menu__item__prix {
-  color: #99E2D0;
-  transition: 1s;
+@-webkit-keyframes decalage {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
-.Menu__categorie :hover .ilog i {
-  color: #99E2D0;
+@keyframes decalage {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.Menu__categorie :hover .ilog {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Menu__categorie :hover i {
+  color: white;
   transition: 1s;
   transform: rotate(-360deg);
 }
