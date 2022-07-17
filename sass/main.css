@@ -357,35 +357,44 @@ footer i {
   display: flex;
   justify-content: space-between;
 }
-.Menu .Menu__item__prix i {
-  transition: 1000ms;
-  transform: scale(1);
-}
-.Menu .Menu__item__prix :hover {
-  transform: scale(1, 2);
-}
 .Menu .Menu__categorie__plat {
   border: 1px;
   border-radius: 15px;
   display: flex;
-  padding: 10px;
   background-color: white;
   margin-top: 20px;
 }
 .Menu .Menu__item {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 .Menu h3, .Menu p {
   margin: 0;
 }
 .Menu .Menu__item__prix {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+}
+.Menu .block__prixi {
+  display: flex;
+  position: relative;
 }
 .Menu span {
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 5px;
+}
+
+.ilog {
+  width: 55px;
+  height: 55px;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  left: 48px;
 }
 
 .Menu__categorie {
@@ -395,7 +404,21 @@ footer i {
 .Menu__categorie h2 {
   font-weight: 300;
 }
+.Menu__categorie :hover .block__prixi {
+  transition: 1s;
+  transform: translateX(-300%);
+}
+.Menu__categorie :hover .Menu__item__prix {
+  color: #99E2D0;
+  transition: 1s;
+}
+.Menu__categorie :hover .ilog i {
+  color: #99E2D0;
+  transition: 1s;
+  transform: rotate(-360deg);
+}
 
+/* MEDIA QUERIES DESKTOP*/
 @media (min-width: 700px) {
   .Resto {
     width: 100%;
