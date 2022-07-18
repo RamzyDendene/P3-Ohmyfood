@@ -51,7 +51,7 @@ body {
 }
 
 .bouton {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .bouton a {
   width: 240px;
@@ -178,7 +178,9 @@ footer i {
   text-align: center;
   background-color: #f6f6f6;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .description p, .description h2 {
   font-weight: 100;
@@ -225,32 +227,30 @@ footer i {
   font-size: 10px;
 }
 
-.Restaurants {
+.restaurant {
   background-color: #f6f6f6;
   padding-top: 30px;
-  padding-left: 10px;
   padding-bottom: 30px;
 }
-.Restaurants h2 {
+.restaurant h2 {
   font-weight: 500;
   margin-left: 12px;
 }
-
-.restaurant-card {
+.restaurant__card {
   border-radius: 20px;
   margin: 20px 10px;
   position: relative;
   background-color: white;
   box-shadow: 0px 6px 14px -4px rgba(0, 0, 0, 0.2);
 }
-.restaurant-card img {
+.restaurant__card img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0px;
 }
-.restaurant-card span {
+.restaurant__card span {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -262,19 +262,17 @@ footer i {
   justify-content: center;
   align-items: center;
 }
-
-.restaurant-card__description {
+.restaurant__card__description {
   padding: 15px;
 }
-.restaurant-card__description h2 {
+.restaurant__card__description h2 {
   font-weight: bold;
 }
-
-.restaurant-card__titre {
+.restaurant__card__titre {
   display: flex;
   justify-content: space-between;
 }
-.restaurant-card__titre i {
+.restaurant__card__titre i {
   font-size: 27px;
   margin-right: 20px;
 }
@@ -305,10 +303,10 @@ footer i {
     background-color: #e4e4e4;
   }
 
-  .restaurants__list {
+  .restaurant__list {
     display: flex;
   }
-  .restaurants__list .restaurant-card {
+  .restaurant__list .restaurant__card {
     width: 25%;
   }
 
