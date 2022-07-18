@@ -1,15 +1,3 @@
-
-
-.Menu__titre{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    & i{
-        font-size: 33px;
-        margin-right: 20px;
-    }
-}
 .Menu{
     
     background-color: #f6f6f6;
@@ -17,64 +5,117 @@
     padding: 20px;
     position: relative;
     bottom: 60px;
+
+        & h3, p{      
+            margin: 0;
+        }
+        & h2{
+            font-weight: 300;
+        }
+        & a{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        & span{
+     
+            border-bottom: solid 3px #99E2D0 ;
+            padding-bottom: 5px;
+         }
     
-    & a{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        &__titre{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+                & i{
+                    font-size: 33px;
+                    margin-right: 20px;
+                }
+        }
+        &__categorie{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+                & :hover{
+                    & .block__checkprix{
+                        animation-name: decalageRLeft;
+                        animation-duration: 1s;
+                        transform-origin: right;
+                        transform: translateX(0%);
+                
+                
+                            @keyframes decalageRLeft {
+                                0%{
+                                    transform: translateX(50%);
+                                }
+                            
+                                100%{
+                                    transform: translateX(0%);
+                    
+                                }
+                                
+                            }
+                    
+                    }
+                
+                    & .ilog{
+                        
+                        background-color: $colour-tertiary;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    
+                        & i{
+                        color: white;
+                        animation-name: decalageRotate;
+                        animation-duration: 1s;
+                        transform: rotate(-360deg);
+                            @keyframes decalageRotate {
+                                0%{
+                                    transform: rotate(360deg);
+                                }
+                            
+                                100%{
+                                    transform: rotate(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        &__categorie__plat{
+            border: 1px;
+            border-radius: 15px;
+            display: flex;
+            background-color: white;
+            margin-top: 20px;
+        }
+    
+        &__item{
+            display: flex;
+            flex-direction: column;  
+            margin: 10px;      
+
+        }
         
-    }
+    
+        &__item__prix{
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
   
 
-
-
-    & .Menu__categorie__plat{
-        border: 1px;
-        border-radius: 15px;
-        display: flex;
-        background-color: white;
-        margin-top: 20px;
-     
-    
-       
-    }
-    
-    & .Menu__item{
-        display: flex;
-        flex-direction: column;  
-        margin: 10px;      
-
-    }
-    & h3, p{      
-          margin: 0;
-    }
-   
-    
-    & .Menu__item__prix{
-        display: flex;
-        align-items: flex-end;
-        margin-bottom: 10px;
-        margin-right: 20px;
-        
-      
- }
-
- .block__checkprix{
+}
+.block__checkprix{
     display: flex;
     position: relative;
 
- }
-        
-   
-    
-
-    & span{
-     
-       border-bottom: solid 3px #99E2D0 ;
-       padding-bottom: 5px;
-    }
-
 }
+ 
 .ilog{
     width: 60px;
     height: 60px;
@@ -86,71 +127,6 @@
 
 
 }
-.Menu__categorie{
-    & h2{
-        font-weight: 300;
-    }
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-   
-  
-    & :hover{
-        & .block__checkprix{
-            animation-name: decalage;
-            animation-duration: 1s;
-            transform-origin: right;
-            transform: translateX(0%);
-    
-    
-            @keyframes decalage {
-                0%{
-                    transform: translateX(50%);
-                }
-               
-                100%{
-                    transform: translateX(0%);
-    
-                }
-                
-            }
-        
-           }
-    
-    
-        & .Menu__item__prix{
-        
-        }
-            & .ilog{
-              
-                background-color: $colour-tertiary;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-                & i{
-                    color: white;
-                    animation-name: decalage2;
-        animation-duration: 1s;
-        transform: rotate(-360deg);
-        @keyframes decalage2 {
-            0%{
-                transform: rotate(360deg);
-            }
-           
-            100%{
-                transform: rotate(0);
-
-            }
-            
-        }
-
-            
-        }
-        
-    }
-}
-
 
 
 
