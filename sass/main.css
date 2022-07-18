@@ -434,10 +434,10 @@ footer i {
 @-webkit-keyframes BottomTopMenu {
   0% {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(50%);
   }
-  50% {
-    opacity: 0.5;
+  60% {
+    opacity: 0.9;
     transform: translateY(0%);
   }
   100% {
@@ -448,10 +448,10 @@ footer i {
 @keyframes BottomTopMenu {
   0% {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(50%);
   }
-  50% {
-    opacity: 0.5;
+  60% {
+    opacity: 0.9;
     transform: translateY(0%);
   }
   100% {
