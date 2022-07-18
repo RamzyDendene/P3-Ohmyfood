@@ -332,25 +332,6 @@ footer i {
   padding: 20px;
   position: relative;
   bottom: 60px;
-  /*
-   @keyframes affich {
-       0% {
-           transform-origin: bottom;
-           transform: scaleY(0);
-           opacity: .1;
-       }
-
-       46% {
-           transform: scaleY(.81);
-       }
-       85%,100% {
-           opacity: 1;
-       }
-       100% {
-           transform: scaleY(1);
-       }
-   }
-  */
 }
 .Menu a {
   width: 100%;
@@ -378,7 +359,7 @@ footer i {
   margin-bottom: 10px;
   margin-right: 20px;
 }
-.Menu .block__prixi {
+.Menu .block__checkprix {
   display: flex;
   position: relative;
 }
@@ -403,7 +384,7 @@ footer i {
 .Menu__categorie h2 {
   font-weight: 300;
 }
-.Menu__categorie :hover .block__prixi {
+.Menu__categorie :hover .block__checkprix {
   -webkit-animation-name: decalage;
           animation-name: decalage;
   -webkit-animation-duration: 1s;

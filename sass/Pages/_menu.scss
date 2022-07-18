@@ -26,25 +26,7 @@
     }
   
 
-    /*
-    @keyframes affich {
-        0% {
-            transform-origin: bottom;
-            transform: scaleY(0);
-            opacity: .1;
-        }
-       
-        46% {
-            transform: scaleY(.81);
-        }
-        85%,100% {
-            opacity: 1;
-        }
-        100% {
-            transform: scaleY(1);
-        }
-    }
-   */
+
 
     & .Menu__categorie__plat{
         border: 1px;
@@ -77,7 +59,7 @@
       
  }
 
- .block__prixi{
+ .block__checkprix{
     display: flex;
     position: relative;
 
@@ -105,31 +87,37 @@
 
 }
 .Menu__categorie{
-    margin-top: 30px;
-    margin-bottom: 30px;
     & h2{
         font-weight: 300;
     }
-    & :hover{
-       & .block__prixi{
-        animation-name: decalage;
-        animation-duration: 1s;
-        transform-origin: right;
-        transform: translateX(0%);
-        @keyframes decalage {
-            0%{
-                transform: translateX(50%);
-            }
-           
-            100%{
-                transform: translateX(0%);
-
-            }
-            
-        }
+    margin-top: 30px;
+    margin-bottom: 30px;
     
-       }
-
+   
+  
+    & :hover{
+        & .block__checkprix{
+            animation-name: decalage;
+            animation-duration: 1s;
+            transform-origin: right;
+            transform: translateX(0%);
+    
+    
+            @keyframes decalage {
+                0%{
+                    transform: translateX(50%);
+                }
+               
+                100%{
+                    transform: translateX(0%);
+    
+                }
+                
+            }
+        
+           }
+    
+    
         & .Menu__item__prix{
         
         }
