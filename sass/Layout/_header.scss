@@ -5,8 +5,9 @@
 header{
     display: flex;
     justify-content: center; 
-    margin-top: 15px;
-    margin-bottom: 15px;   
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    background-color: white;  
     & i{
         padding-top:4px;
         font-size: 20px;

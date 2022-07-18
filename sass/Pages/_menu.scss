@@ -3,6 +3,7 @@
     background-color: #f6f6f6;
     border-radius:  40px 40px 0px 0px;
     padding: 20px;
+    padding-bottom: 0;
     position: relative;
     bottom: 60px;
 
@@ -91,6 +92,8 @@
             display: flex;
             background-color: white;
             margin-top: 20px;
+            box-shadow: 0px 6px 14px -4px rgb(0 0 0 / 20%);
+
         }
     
         &__item{

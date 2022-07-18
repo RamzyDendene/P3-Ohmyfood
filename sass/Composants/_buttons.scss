@@ -1,25 +1,31 @@
-.bouton a{
-   
-    border-radius: 40px;
-    background: linear-gradient(345deg, $colour-primary, $colour-secondary);
-    width:240px;
-    height : 50px;
-    color: white;
-    font-size: 18px;
-    border: 0;
-    font-family: 'Roboto';
-    display: flex;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
+body{
+    background-color: $colour-menu;
+}
+.bouton{
+    padding-bottom: 50px;
+
+    & a{
+        width:240px;
+        height : 50px;
+        font-size: 18px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 30px;
+        border-radius: 40px;
+        background: linear-gradient(345deg, $colour-primary, $colour-secondary);
+        border: 0;
+        opacity: 1;
+        box-shadow: 0px 10px 20px -1px rgba(0,0,0,0.20);
+
 }
 
 
-.bouton :hover{
-    transition: all 1000ms;
-    opacity: .8;
-    box-shadow: 0px 2px 16px -1px rgba(0,0,0,0.49);
+    & :hover{
+        transition: all 400ms;
+        opacity: .9;
+        box-shadow: 0px 10px 20px -1px rgba(0,0,0,0.40);
+    }
 }
