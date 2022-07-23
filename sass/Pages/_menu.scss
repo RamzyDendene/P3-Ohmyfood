@@ -71,6 +71,7 @@
                         color: white;
                         animation-name: decalageRotate;
                         animation-duration: 1s;
+                        
                         transform: rotate(-360deg);
                             @keyframes decalageRotate {
                                 0%{
@@ -134,6 +135,7 @@
 .block__checkprix{
     display: flex;
     position: relative;
+
 
 }
  

@@ -4,7 +4,7 @@
 
 header{
     display: flex;
-    justify-content: center; 
+    justify-content: start; 
     padding-top: 15px;
     padding-bottom: 15px; 
     background-color: white;  
@@ -13,13 +13,24 @@ header{
         padding-top:4px;
         font-size: 20px;
     }
+ 
   
     & img{
-    width: 40%;
+    width: 50%;
     }
     .logo{
         display: flex;
         margin: auto;
+    }
+    & .LOGO{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    & .flecheindex{
+        width: 5%;
+        display:flex;
+        align-items: center;
     }
 }
 /*MEDIA QUERIES DESKTOP*/
@@ -27,6 +38,10 @@ header{
 @media (min-width:700px){
 
     header {
+        padding-top: 0;
+        & .LOGO{
+            width: 100%;
+        }
     
     & img{
         width: auto;

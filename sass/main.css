@@ -81,7 +81,7 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: white;
@@ -92,15 +92,31 @@ header i {
   font-size: 20px;
 }
 header img {
-  width: 40%;
+  width: 50%;
 }
 header .logo {
   display: flex;
   margin: auto;
 }
+header .LOGO {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+header .flecheindex {
+  width: 5%;
+  display: flex;
+  align-items: center;
+}
 
 /*MEDIA QUERIES DESKTOP*/
 @media (min-width: 700px) {
+  header {
+    padding-top: 0;
+  }
+  header .LOGO {
+    width: 100%;
+  }
   header img {
     width: auto;
   }
