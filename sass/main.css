@@ -127,6 +127,9 @@ header .flecheindex {
   header i {
     font-size: 30px;
   }
+  header .flecheindex {
+    width: 0%;
+  }
 }
 footer {
   background-color: #353535;
@@ -354,6 +357,9 @@ footer i {
 }
 .Menu h3, .Menu p {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .Menu h2 {
   font-weight: 300;
@@ -382,6 +388,8 @@ footer i {
   margin-bottom: 30px;
 }
 .Menu__categorie :hover .block__checkprix {
+  width: 40%;
+  justify-content: end;
   -webkit-animation-name: decalageRLeft;
           animation-name: decalageRLeft;
   -webkit-animation-duration: 1s;
@@ -480,6 +488,9 @@ footer i {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .Menu__item__prix {
   display: flex;
@@ -509,5 +520,15 @@ footer i {
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .Menu__general {
+    display: flex;
+    width: 100%;
+  }
+
+  .Menu__categorie {
+    width: 33%;
+    margin-right: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
