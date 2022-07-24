@@ -116,6 +116,12 @@ background-color: white;
                 }
                 &__description{
                     padding: 15px;
+                    display: flex;
+                    justify-content: space-between;
+    & i{
+        font-size: 27px;
+        margin-right: 20px;    
+        }
                         & h2{
                             font-weight: bold;
                         }
@@ -123,10 +129,7 @@ background-color: white;
                 &__titre{
                     display: flex;
                     justify-content: space-between;
-                        & i{
-                        font-size: 27px;
-                        margin-right: 20px;    
-                        }
+                        
                 }
         }
 }
@@ -136,24 +139,24 @@ background-color: white;
 .heart{
     position: relative;
     color: black;  
-    z-index: 1;
+    
         & :hover{ 
             opacity: 1;
-            transition: .3s;
+            transition: 3s;
         }
 
 
 
         &--hover {
             position: absolute;
-            top: 0px;
+            bottom: 15px;
             color: $colour-primary;
             opacity: 0;
+            z-index: 1;
 
             
         } 
 }
-
 
 /* MEDIA-QUERIES DESKTOP*/
 

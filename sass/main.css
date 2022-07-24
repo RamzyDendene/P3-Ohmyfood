@@ -7,6 +7,17 @@ body, h1, h3, p {
   margin: 0;
 }
 
+.HEARTCHECK input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.HEARTCHECK input[type=checkbox]:checked + .heart--hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
 h1 {
   font-family: "Shrikhand";
   font-style: italic;
@@ -126,9 +137,6 @@ header .flecheindex {
   }
   header i {
     font-size: 30px;
-  }
-  header .flecheindex {
-    width: 0%;
   }
 }
 footer {
@@ -280,6 +288,12 @@ footer i {
 }
 .restaurant__card__description {
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant__card__description i {
+  font-size: 27px;
+  margin-right: 20px;
 }
 .restaurant__card__description h2 {
   font-weight: bold;
@@ -288,25 +302,21 @@ footer i {
   display: flex;
   justify-content: space-between;
 }
-.restaurant__card__titre i {
-  font-size: 27px;
-  margin-right: 20px;
-}
 
 .heart {
   position: relative;
   color: black;
-  z-index: 1;
 }
 .heart :hover {
   opacity: 1;
-  transition: 0.3s;
+  transition: 3s;
 }
 .heart--hover {
   position: absolute;
-  top: 0px;
+  bottom: 15px;
   color: #9356DC;
   opacity: 0;
+  z-index: 1;
 }
 
 /* MEDIA-QUERIES DESKTOP*/

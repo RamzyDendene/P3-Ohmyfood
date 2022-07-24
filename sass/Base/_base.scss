@@ -1,9 +1,20 @@
 a{
     text-decoration: none;
     color: black;
-    
+
 }
 body,h1,h3,p{
     margin: 0;
 }
 
+.HEARTCHECK input[type="checkbox"]{
+
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.HEARTCHECK input[type="checkbox"]:checked + .heart--hover{
+opacity: 1;
+transition: .2s ;}
