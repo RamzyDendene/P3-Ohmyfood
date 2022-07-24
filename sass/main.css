@@ -352,6 +352,10 @@ footer i {
   justify-content: space-between;
 }
 
+body {
+  position: relative;
+}
+
 .heart {
   position: relative;
   color: black;
@@ -559,8 +563,7 @@ footer i {
   height: 180px;
   margin: 100px auto;
   position: absolute;
-  top: 10%;
-  left: 44%;
+  left: 30%;
 }
 .pan-loader .loader {
   position: relative;
@@ -661,6 +664,11 @@ footer i {
 
   .heart--hover {
     bottom: 0px;
+  }
+
+  .pan-loader {
+    position: absolute;
+    left: 50%;
   }
 }
 .Menu {

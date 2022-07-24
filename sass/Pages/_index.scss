@@ -134,7 +134,9 @@ background-color: white;
         }
 }
 
-
+body{
+    position: relative;
+}
 
 .heart{
     position: relative;
@@ -287,8 +289,7 @@ $loader-color: #FDD835;
   // border: 1px solid red;
   margin: 100px auto;
 position: absolute;
-top: 10%;
-left: 44%;
+left: 30%;
 
   .loader {
     position: relative;
@@ -394,8 +395,12 @@ padding: 20px;
 .heart--hover{
 bottom: 0px;
 }
+.pan-loader {
+
+position: absolute;
+left: 50%;
 
   }
 
-
+  }
   
