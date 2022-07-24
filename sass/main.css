@@ -552,10 +552,10 @@ footer i {
   .Menu__general {
     display: flex;
     width: 100%;
+    justify-content: space-between;
   }
 
   .Menu__categorie {
-    width: 33%;
-    margin-right: 25px;
+    width: 32%;
   }
 }/*# sourceMappingURL=main.css.map */
