@@ -360,9 +360,18 @@ footer i {
     width: 25%;
   }
 
+  .HEARTCHECK {
+    position: absolute;
+    right: 5px;
+    bottom: 21px;
+  }
   .HEARTCHECK :hover {
     opacity: 1;
     transition: 1s;
+  }
+
+  .heart--hover {
+    bottom: 0px;
   }
 }
 .Menu {

@@ -211,15 +211,23 @@ padding: 20px;
     }
 }
 
-.HEARTCHECK :hover{
+.HEARTCHECK {
+    position: absolute;
+    right: 5px;
+    bottom: 21px;
+
+ :hover{
    
                 opacity: 1;
                 transition: 1s;
             
         } 
 }
+.heart--hover{
+bottom: 0px;
+}
 
-
+  }
 
 
   
