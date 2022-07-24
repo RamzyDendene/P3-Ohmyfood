@@ -175,11 +175,12 @@ transition: .2s ;}
         animation-name: page;
         animation-iteration-count: 1;
         position: relative;
-        bottom: 380px;
         z-index: 1;
         transform-origin: top;
-        animation: page 4s backwards;
-        animation-delay: 5s;
+        animation: page 10s backwards;
+        animation-delay: 0s;
+        transform: translateY(0);
+
         @keyframes page{
             0% {
                 transform: translateY(9999px);
@@ -245,6 +246,7 @@ $loader-color: #FDD835;
     width: 2%;
     left: 25%;
     transform: rotate(360deg);
+    
   }
 }
 
@@ -279,11 +281,15 @@ $loader-color: #FDD835;
 }
 
 .pan-loader {
-  width: $component-dimension;
-  height: $component-dimension;
-
+    width: $component-dimension;
+    height: $component-dimension;
+  
   // border: 1px solid red;
   margin: 100px auto;
+position: absolute;
+top: 10%;
+left: 44%;
+
   .loader {
     position: relative;
     top: 10%;
@@ -294,13 +300,13 @@ $loader-color: #FDD835;
     border: 10px solid transparent;
     border-bottom: 10px solid $loader-color;
     border-radius: 50%;
-    animation: loader $timing infinite;
+    animation: loader $timing 3;
     animation-timing-function: linear;
   }
   .pan-container {
     display:flex;
     width: 100%;
-    animation: pan $timing infinite;
+    animation: pan $timing 3;
   }
   .pan {
     width: 60%;
@@ -328,7 +334,7 @@ $loader-color: #FDD835;
     background: $color-shadow;
     // box-shadow: 5px 0 8px 4px $color-shadow;
     border-radius: 20px;
-    animation: shadow $timing infinite;
+    animation: shadow $timing 3;
   }
 }
 
