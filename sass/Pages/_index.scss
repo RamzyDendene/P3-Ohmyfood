@@ -139,13 +139,13 @@ background-color: white;
 .heart{
     position: relative;
     color: black;  
-    
+    /*
         & :hover{ 
             opacity: 1;
             transition: 3s;
         }
 
-
+*/
 
         &--hover {
             position: absolute;
@@ -157,6 +157,19 @@ background-color: white;
             
         } 
 }
+
+.HEARTCHECK input[type="checkbox"]{
+
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.HEARTCHECK input[type="checkbox"]:checked + .heart--hover{
+opacity: 1;
+transition: .2s ;}
+
 
 /* MEDIA-QUERIES DESKTOP*/
 
@@ -198,7 +211,15 @@ padding: 20px;
     }
 }
 
-
-
+.HEARTCHECK :hover{
+   
+                opacity: 1;
+                transition: 1s;
+            
+        } 
 }
+
+
+
+
   
