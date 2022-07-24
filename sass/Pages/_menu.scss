@@ -50,20 +50,6 @@
                         animation-duration: 1s;
                         transform-origin: right;
                         transform: translateX(0%);
-                
-                
-                            @keyframes decalageRLeft {
-                                0%{
-                                    transform: translateX(50%);
-                                }
-                            
-                                100%{
-                                    transform: translateX(0%);
-                    
-                                }
-                                
-                            }
-                    
                     }
                 
                     & .ilog{
@@ -79,15 +65,7 @@
                         animation-duration: 1s;
                         
                         transform: rotate(-360deg);
-                            @keyframes decalageRotate {
-                                0%{
-                                    transform: rotate(360deg);
-                                }
                             
-                                100%{
-                                    transform: rotate(0);
-                                }
-                            }
                         }
                     }
                 }
@@ -104,22 +82,7 @@
             animation-name: BottomTopMenu;
             animation-duration: 3s;
             transform-origin:bottom;
-            @keyframes BottomTopMenu {
-                0%{
-                    opacity: 0;
-                    transform: translateY(50%);
-                }
-                60%{
-                    opacity: .9;
-                    transform: translateY(0%);
-
-                }
-             
-                100%{
-                    opacity: 1;
-                    transform: translateY(0)
-                }
-            }
+            
         }
     
         &__item{

@@ -1,3 +1,63 @@
+@-webkit-keyframes decalageRLeft {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes decalageRLeft {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes decalageRotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes decalageRotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes BottomTopMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes BottomTopMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -424,22 +484,6 @@ footer i {
   transform-origin: right;
   transform: translateX(0%);
 }
-@-webkit-keyframes decalageRLeft {
-  0% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes decalageRLeft {
-  0% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
 .Menu__categorie :hover .ilog {
   background-color: #99E2D0;
   display: flex;
@@ -454,22 +498,6 @@ footer i {
           animation-duration: 1s;
   transform: rotate(-360deg);
 }
-@-webkit-keyframes decalageRotate {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-@keyframes decalageRotate {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .Menu__categorie__plat {
   border-radius: 15px;
   display: flex;
@@ -482,34 +510,6 @@ footer i {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   transform-origin: bottom;
-}
-@-webkit-keyframes BottomTopMenu {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  60% {
-    opacity: 0.9;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes BottomTopMenu {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  60% {
-    opacity: 0.9;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 .Menu__item {
   display: flex;
