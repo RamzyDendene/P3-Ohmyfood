@@ -388,11 +388,13 @@ footer i {
   position: relative;
   z-index: 1;
   transform-origin: top;
-  -webkit-animation: page 10s;
-          animation: page 10s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation: page 0s;
+          animation: page 0s;
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
   transform: translateY(0);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   /*
   @keyframes glissement {
     from {
@@ -410,7 +412,7 @@ footer i {
 }
 @-webkit-keyframes page {
   0% {
-    transform: translateY(9999px);
+    transform: translateY(999px);
   }
   100% {
     transform: translateY(0);
@@ -418,7 +420,7 @@ footer i {
 }
 @keyframes page {
   0% {
-    transform: translateY(9999px);
+    transform: translateY(999px);
   }
   100% {
     transform: translateY(0);
@@ -569,16 +571,16 @@ footer i {
   border: 10px solid transparent;
   border-bottom: 10px solid #FDD835;
   border-radius: 50%;
-  -webkit-animation: loader 3s 3;
-          animation: loader 3s 3;
+  -webkit-animation: loader 2s 2;
+          animation: loader 2s 2;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
 .pan-loader .pan-container {
   display: flex;
   width: 100%;
-  -webkit-animation: pan 3s 3;
-          animation: pan 3s 3;
+  -webkit-animation: pan 2s 2;
+          animation: pan 2s 2;
 }
 .pan-loader .pan {
   width: 60%;
@@ -604,8 +606,8 @@ footer i {
   height: 8px;
   background: lightgray;
   border-radius: 20px;
-  -webkit-animation: shadow 3s 3;
-          animation: shadow 3s 3;
+  -webkit-animation: shadow 2s 2;
+          animation: shadow 2s 2;
 }
 
 .HEARTCHECK {
@@ -669,7 +671,7 @@ footer i {
 
   .pan-loader {
     position: absolute;
-    left: 50%;
+    left: 43%;
   }
 }
 .Menu {

@@ -175,13 +175,14 @@ transition: .2s ;}
         position: relative;
         z-index: 1;
         transform-origin: top;
-        animation: page 10s ;
-        animation-delay: 0s;
+        animation: page 0s ;
+        animation-delay: 3500ms;
         transform: translateY(0);
+        animation-fill-mode: backwards;
 
         @keyframes page{
             0% {
-                transform: translateY(9999px);
+                transform: translateY(999px);
             }
             100% {
                 transform: translateY(0);
@@ -204,7 +205,7 @@ transition: .2s ;}
           }      
 ////**LOADER*****////
 $component-dimension: 180px;
-$timing: 3s;
+$timing: 2s;
 $color-shadow: lightgray;
 $pan-color-light: #3949AB;
 $pan-color-dark: #5C6BC0;
@@ -297,13 +298,13 @@ left: 30%;
     border: 10px solid transparent;
     border-bottom: 10px solid $loader-color;
     border-radius: 50%;
-    animation: loader $timing 3;
+    animation: loader $timing 2;
     animation-timing-function: linear;
   }
   .pan-container {
     display:flex;
     width: 100%;
-    animation: pan $timing 3;
+    animation: pan $timing 2;
   }
   .pan {
     width: 60%;
@@ -331,7 +332,7 @@ left: 30%;
     background: $color-shadow;
     // box-shadow: 5px 0 8px 4px $color-shadow;
     border-radius: 20px;
-    animation: shadow $timing 3;
+    animation: shadow $timing 2;
   }
 }
 
@@ -401,7 +402,7 @@ bottom: 0px;
 .pan-loader {
 
 position: absolute;
-left: 50%;
+left: 43%;
 
   }
 
