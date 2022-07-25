@@ -352,10 +352,6 @@ footer i {
   justify-content: space-between;
 }
 
-body {
-  position: relative;
-}
-
 .heart {
   position: relative;
   color: black;
@@ -394,8 +390,8 @@ body {
   position: relative;
   z-index: 1;
   transform-origin: top;
-  -webkit-animation: page 10s backwards;
-          animation: page 10s backwards;
+  -webkit-animation: page 10s;
+          animation: page 10s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   transform: translateY(0);

@@ -134,9 +134,7 @@ background-color: white;
         }
 }
 
-body{
-    position: relative;
-}
+
 
 .heart{
     position: relative;
@@ -179,7 +177,7 @@ transition: .2s ;}
         position: relative;
         z-index: 1;
         transform-origin: top;
-        animation: page 10s backwards;
+        animation: page 10s ;
         animation-delay: 0s;
         transform: translateY(0);
 
