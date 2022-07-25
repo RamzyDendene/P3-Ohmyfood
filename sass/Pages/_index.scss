@@ -119,12 +119,14 @@ background-color: white;
                     justify-content: space-between;
     & i{
         font-size: 27px;
-        margin-right: 20px;    
+        margin-right: 20px;   
+ 
         }
                         & h2{
                             font-weight: bold;
                         }
                 } 
+                
                 &__titre{
                     display: flex;
                     justify-content: space-between;
@@ -148,7 +150,10 @@ background-color: white;
 
         &--hover {
             position: absolute;
-            color: $colour-primary;
+            background:-webkit-linear-gradient(top, $colour-primary, $colour-secondary);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
             opacity: 0;
             z-index: 1;
 
