@@ -309,6 +309,18 @@ footer i {
   font-weight: 500;
   margin-left: 12px;
 }
+.restaurant a span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  width: 75px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .restaurant__card {
   border-radius: 20px;
   margin: 20px 10px;
@@ -323,21 +335,8 @@ footer i {
      object-fit: cover;
   border-radius: 20px 20px 0 0px;
 }
-.restaurant__card span {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: #99E2D0;
-  color: #2c9c81;
-  width: 75px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .restaurant__card__description {
   padding: 15px;
-  display: flex;
   justify-content: space-between;
 }
 .restaurant__card__description i {
@@ -365,7 +364,6 @@ footer i {
 }
 .heart--hover {
   position: absolute;
-  bottom: 15px;
   color: #9356DC;
   opacity: 0;
   z-index: 1;
@@ -377,7 +375,7 @@ footer i {
   height: 0;
 }
 
-.HEARTCHECK input[type=checkbox]:checked + .heart--hover {
+.HEARTCHECK input[type=checkbox]:checked + span {
   opacity: 1;
   transition: 0.2s;
 }
@@ -610,6 +608,13 @@ footer i {
           animation: shadow 3s 3;
 }
 
+.HEARTCHECK {
+  position: absolute;
+  right: 30px;
+  bottom: 21px;
+  font-size: 30px;
+}
+
 /* MEDIA-QUERIES DESKTOP*/
 @media (min-width: 700px) {
   .main {
@@ -650,7 +655,7 @@ footer i {
 
   .HEARTCHECK {
     position: absolute;
-    right: 5px;
+    right: 30px;
     bottom: 21px;
   }
   .HEARTCHECK :hover {

@@ -86,7 +86,19 @@ background-color: white;
             font-weight: 500;
             margin-left: 12px;
         }
-
+        a span {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          background-color: $colour-tertiary;
+          color: darken($colour-tertiary,35%);
+          width: 75px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+        }
         &__card{
         border-radius: 20px;
         margin: 20px 10px;
@@ -101,22 +113,9 @@ background-color: white;
                     border-radius: 20px 20px 0 0px;
                 }
 
-                & span {
-                    position: absolute;
-                    right: 10px;
-                    top: 10px;
-                    background-color: $colour-tertiary;
-                    color: darken($colour-tertiary,35%);
-                    width: 75px;
-                    height: 30px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                }
+               
                 &__description{
                     padding: 15px;
-                    display: flex;
                     justify-content: space-between;
     & i{
         font-size: 27px;
@@ -149,7 +148,6 @@ background-color: white;
 
         &--hover {
             position: absolute;
-            bottom: 15px;
             color: $colour-primary;
             opacity: 0;
             z-index: 1;
@@ -166,7 +164,7 @@ background-color: white;
 
 }
 
-.HEARTCHECK input[type="checkbox"]:checked + .heart--hover{
+.HEARTCHECK input[type="checkbox"]:checked + span{
 opacity: 1;
 transition: .2s ;}
 
@@ -337,6 +335,12 @@ left: 30%;
   }
 }
 
+.HEARTCHECK {
+  position: absolute;
+  right: 30px;
+  bottom: 21px;
+  font-size: 30px;
+}
 
 /* MEDIA-QUERIES DESKTOP*/
 
@@ -380,8 +384,9 @@ padding: 20px;
 
 .HEARTCHECK {
     position: absolute;
-    right: 5px;
+    right: 30px;
     bottom: 21px;
+
 
  :hover{
    
