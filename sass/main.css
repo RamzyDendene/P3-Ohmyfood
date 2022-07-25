@@ -381,49 +381,31 @@ footer i {
 }
 
 .PAGE {
-  -webkit-animation-name: page;
-          animation-name: page;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   position: relative;
   z-index: 1;
-  transform-origin: top;
   -webkit-animation: page 0s;
           animation: page 0s;
-  -webkit-animation-delay: 3500ms;
-          animation-delay: 3500ms;
-  transform: translateY(0);
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  /*
-  @keyframes glissement {
-    from {
-
-      margin-top: 100%;
-      height: 300%;
-    }
-
-    to {
-      margin-top: 0%;
-      height: 100%;
-      bottom: 380px;
-    }
-  }*/
 }
 @-webkit-keyframes page {
   0% {
-    transform: translateY(999px);
+    opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes page {
   0% {
-    transform: translateY(999px);
+    opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -557,9 +539,10 @@ footer i {
 .pan-loader {
   width: 180px;
   height: 180px;
-  margin: 100px auto;
   position: absolute;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .pan-loader .loader {
   position: relative;
@@ -571,16 +554,16 @@ footer i {
   border: 10px solid transparent;
   border-bottom: 10px solid #FDD835;
   border-radius: 50%;
-  -webkit-animation: loader 2s 2;
-          animation: loader 2s 2;
+  -webkit-animation: loader 1500ms 3;
+          animation: loader 1500ms 3;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
 .pan-loader .pan-container {
   display: flex;
   width: 100%;
-  -webkit-animation: pan 2s 2;
-          animation: pan 2s 2;
+  -webkit-animation: pan 1500ms 3;
+          animation: pan 1500ms 3;
 }
 .pan-loader .pan {
   width: 60%;
@@ -606,8 +589,33 @@ footer i {
   height: 8px;
   background: lightgray;
   border-radius: 20px;
-  -webkit-animation: shadow 2s 2;
-          animation: shadow 2s 2;
+  -webkit-animation: shadow 1500ms 3;
+          animation: shadow 1500ms 3;
+}
+
+.LOAD {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-animation: loading 5s;
+          animation: loading 5s;
+  opacity: 0;
+}
+@-webkit-keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .HEARTCHECK {
@@ -622,18 +630,15 @@ footer i {
   .main {
     margin: 0;
   }
-
   .Recherche {
     background-color: #e4e4e4;
   }
-
   .restaurant__list {
     display: flex;
   }
   .restaurant__list .restaurant__card {
     width: 25%;
   }
-
   .Fonctionnement {
     background-color: #e4e4e4;
     margin: 0;
@@ -654,7 +659,6 @@ footer i {
   .Fonctionnement a {
     width: 25%;
   }
-
   .HEARTCHECK {
     position: absolute;
     right: 30px;
@@ -664,14 +668,8 @@ footer i {
     opacity: 1;
     transition: 1s;
   }
-
   .heart--hover {
     bottom: 0px;
-  }
-
-  .pan-loader {
-    position: absolute;
-    left: 43%;
   }
 }
 .Menu {
@@ -788,13 +786,11 @@ footer i {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   .Menu__general {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
-
   .Menu__categorie {
     width: 32%;
   }
